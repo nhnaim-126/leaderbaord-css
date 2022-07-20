@@ -1,0 +1,130 @@
+
+/* font styles */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Open+Sans:ital,wght@1,600&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* common styles */
+body{
+    background-color: #E5E5E5;;
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 25px;
+    
+}
+main{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 13px;
+}
+/* top part styles */
+.top-player{
+    margin-top: 3px;
+    margin-bottom: 30px;
+}
+.player-name{
+    font-size: 18px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 29px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width:56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+}
+.name{
+    font-size: 24px;
+    color:  #562EFF;
+}
+
+
+.blogs{
+   display: grid; 
+   grid-template-columns: repeat(2,1fr);
+}
+.blog-name{
+    margin-left: 33px;
+
+}
+.blog .thumble img {
+    width: 177px;
+}
+.blog-author{
+    color: gray;  
+}
+.blog-author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+/* letest courses styles */
+.course .course-thumble img{
+    width: 224px;
+}
+.fa-star.fielded{
+    color:goldenrod;
+}
+.fa-star.empty{
+    color:gray;
+}
+.fa-clock{
+    color:lightcoral;
+}
+.course-info{
+    display: flex;
+   align-items: center;
+
+   
+}
+.duration{
+    background-color: rgba(240, 128, 128, 0.458);
+   border-radius: 10px;
+   padding: 3px;
+    margin-left: 3px;
+    color: red;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.course-mantor{
+    color: red;
+    font-size: 15px;
+}
+
+/* for mobile device */
+@media only screen  and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players ,.blogs ,.courses{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    
+}
+@media only screen  and (min-width:688px) and (max-width:992px){
+    .players ,.courses{
+        grid-template-columns: repeat(2,1fr);
+      
+    }
+    
+}
